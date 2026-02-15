@@ -1,76 +1,76 @@
-# CLAUDE.md — AI Assistant Guide for AITF
+# CLAUDE.md — AITF 프로젝트 AI 어시스턴트 가이드
 
-## Project Overview
+## 프로젝트 개요
 
-AITF (AI Test Framework) is a new project repository. This file serves as the canonical reference for AI assistants working in this codebase.
+AITF (AI Test Framework)는 새로 시작된 프로젝트 저장소입니다. 이 파일은 이 코드베이스에서 작업하는 AI 어시스턴트를 위한 공식 참조 문서입니다.
 
-## Repository Structure
+## 저장소 구조
 
 ```
 AITF/
-├── CLAUDE.md          # This file — AI assistant guide and project conventions
-└── (project files)    # To be added as the project develops
+├── CLAUDE.md          # 이 파일 — AI 어시스턴트 가이드 및 프로젝트 규칙
+└── (프로젝트 파일)      # 프로젝트 진행에 따라 추가 예정
 ```
 
-> **Note:** This repository is in its initial state. Update this section as the project structure evolves.
+> **참고:** 이 저장소는 초기 상태입니다. 프로젝트 구조가 발전함에 따라 이 섹션을 업데이트하세요.
 
-## Development Workflow
+## 개발 워크플로우
 
-### Branch Conventions
+### 브랜치 규칙
 
-- Feature branches should follow the pattern: `claude/<description>-<session-id>`
-- Always push with: `git push -u origin <branch-name>`
-- Never force-push to `main` or `master`
+- 기능 브랜치는 다음 패턴을 따릅니다: `claude/<설명>-<세션ID>`
+- 푸시할 때 항상 다음 명령어를 사용합니다: `git push -u origin <브랜치명>`
+- `main` 또는 `master`에 강제 푸시(force-push)를 절대 하지 않습니다
 
-### Commit Messages
+### 커밋 메시지
 
-- Use clear, descriptive commit messages
-- Focus on the "why" rather than the "what"
-- Keep the first line under 72 characters
-- Use imperative mood (e.g., "Add feature" not "Added feature")
+- 명확하고 설명적인 커밋 메시지를 작성합니다
+- "무엇을" 했는지보다 "왜" 했는지에 초점을 맞춥니다
+- 첫 번째 줄은 72자 이내로 유지합니다
+- 명령형 어조를 사용합니다 (예: "기능 추가", "버그 수정")
 
-### Pull Requests
+### 풀 리퀘스트
 
-- Keep PR titles short (under 70 characters)
-- Include a summary section with bullet points
-- Include a test plan when applicable
+- PR 제목은 짧게 유지합니다 (70자 이내)
+- 요약 섹션에 핵심 사항을 글머리 기호로 나열합니다
+- 해당되는 경우 테스트 계획을 포함합니다
 
-## Build & Test
+## 빌드 및 테스트
 
-> **TODO:** Document build commands, test commands, and lint commands as they are established.
+> **TODO:** 빌드 명령어, 테스트 명령어, 린트 명령어가 확정되면 여기에 문서화하세요.
 
-## Code Conventions
+## 코드 규칙
 
-### General Principles
+### 일반 원칙
 
-- Keep solutions simple and focused — avoid over-engineering
-- Only add error handling at system boundaries (user input, external APIs)
-- Don't create abstractions for one-time operations
-- Prefer editing existing files over creating new ones
-- Remove unused code entirely — no compatibility shims or `// removed` comments
+- 솔루션은 간단하고 집중적으로 유지합니다 — 과도한 설계를 피합니다
+- 시스템 경계(사용자 입력, 외부 API)에서만 오류 처리를 추가합니다
+- 일회성 작업을 위한 추상화를 만들지 않습니다
+- 새 파일을 만드는 것보다 기존 파일을 수정하는 것을 우선합니다
+- 사용하지 않는 코드는 완전히 삭제합니다 — 호환성 코드나 `// 삭제됨` 주석을 남기지 않습니다
 
-### Security
+### 보안
 
-- Never commit secrets, credentials, or `.env` files
-- Validate user input and external API data at system boundaries
-- Follow OWASP top 10 guidelines
+- 비밀 키, 인증 정보, `.env` 파일을 절대 커밋하지 않습니다
+- 시스템 경계에서 사용자 입력과 외부 API 데이터를 검증합니다
+- OWASP 상위 10개 보안 지침을 따릅니다
 
-## Key Files
+## 주요 파일
 
-| File | Purpose |
-|------|---------|
-| `CLAUDE.md` | AI assistant guide and project conventions |
+| 파일 | 용도 |
+|------|------|
+| `CLAUDE.md` | AI 어시스턴트 가이드 및 프로젝트 규칙 |
 
-> Update this table as key files are added to the project.
+> 프로젝트에 주요 파일이 추가되면 이 표를 업데이트하세요.
 
-## Common Tasks
+## 자주 수행하는 작업
 
-> **TODO:** Document common development tasks, debugging tips, and troubleshooting steps as they are established.
+> **TODO:** 일반적인 개발 작업, 디버깅 팁, 문제 해결 방법이 확립되면 여기에 문서화하세요.
 
-## Architecture Decisions
+## 아키텍처 결정 사항
 
-> Record significant architectural decisions here as the project develops, using the format:
+> 프로젝트가 진행됨에 따라 중요한 아키텍처 결정 사항을 아래 형식으로 기록하세요:
 >
-> **Decision:** [What was decided]
-> **Context:** [Why it was needed]
-> **Consequences:** [Trade-offs and implications]
+> **결정:** [결정된 내용]
+> **배경:** [왜 필요했는지]
+> **결과:** [트레이드오프 및 영향]
